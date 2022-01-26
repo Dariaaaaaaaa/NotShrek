@@ -1,2 +1,2 @@
 # NotShrek
-Just a fun project made with pygame
+Just a fun test project made with pygame. 

@@ -23,26 +23,11 @@ def draw_window(st):
     pygame.display.update()
 
 
-def get_damage(health, amount):
-    health -= amount
-    if health <= 0:
-        pass
-    return health
-
-
-def get_health(health, amount):
-    health += amount
-    if health > MAX_HEALTH:
-        health = MAX_HEALTH
-    return health
-
-
 def main():
     st = pygame.Rect(200, 300, STUDENT_WIDTH, STUDENT_HEIGHT)
     run = True
     clock = pygame.time.Clock()
-    current_health = 200
-    health_ratio = MAX_HEALTH/current_health
+
 
     while run:
         clock.tick(FPS)
